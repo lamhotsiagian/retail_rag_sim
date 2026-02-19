@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  dummy_api:
+    env_file:
+      - ../.env
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    command: ["uvicorn", "api.dummy_api:app", "--host", "0.0.0.0", "--port", "8001"]
+    ports:
+      - "8001:8001"
+
+  ui:
+    env_file:
+      - ../.env
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    environment:
+      - PYTHONPATH=/app/src
+    ports:
+      - "8501:8501"
+    depends_on:
+      - dummy_api

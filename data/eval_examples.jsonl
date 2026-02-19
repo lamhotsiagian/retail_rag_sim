@@ -1,0 +1,4 @@
+{"input": "What is the return window for in-store pickup?", "expected_contains": "14 days", "must_cite": true}
+{"input": "Can I change the pickup person for order R-10001?", "expected_contains": "alternate pickup person", "must_cite": true}
+{"input": "How much tax did I pay on order R-10002 and what was the total?", "expected_contains": "$", "must_cite": true}
+{"input": "What are today's hours for the Chicago store?", "expected_contains": "hours", "must_cite": false}
