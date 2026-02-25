@@ -9,7 +9,8 @@ A **ready-to-run** RAG simulation with:
 - **Evaluation**: local offline metrics + optional **LangSmith** (if configured)
 - **Deployable**: Docker + docker-compose + GitHub Actions CI
 
-✅ **Sanitized domain**: generic *Retail Store* policies (returns/pickup/appointments)
+<img width="2255" height="1302" alt="image" src="https://github.com/user-attachments/assets/b420849b-57da-49fb-8fc0-54bf884d61cc" />
+
 
 ---
 
